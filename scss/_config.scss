@@ -1,0 +1,22 @@
+// Variables
+$website-width: 1680px;
+$main-color: #e4cf19;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+// Photo by Joshua Earle on Unsplash
+$bg-image: url("../img/header.jpg");
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+@mixin setColors($color) {
+  background: $color;
+  color: set-text-color($color);
+}
