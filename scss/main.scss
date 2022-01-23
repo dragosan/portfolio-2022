@@ -20,7 +20,7 @@ a {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none !important;
 }
 
 h2,
@@ -255,5 +255,33 @@ footer {
   .social {
     display: flex;
     justify-content: space-between;
+
+    li {
+      list-style: none;
+    }
+
+    i {
+      color: teal;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #projects {
+    .projects-area {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      padding: 2rem;
+      .card {
+        width: 400px;
+        height: 300px;
+      }
+    }
+  }
+
+  #skills {
+    &-area {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
