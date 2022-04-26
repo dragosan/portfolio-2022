@@ -587,8 +587,8 @@ footer .social i {
     padding: 2rem;
   }
   #projects .projects-area .card {
-    width: 400px;
-    height: 300px;
+    width: 80vw;
+    height: 50vh;
   }
   #skills-area {
     -ms-grid-columns: (1fr)[2];

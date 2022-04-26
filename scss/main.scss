@@ -266,15 +266,17 @@ footer {
   }
 }
 
+
 @media only screen and (max-width: 800px) {
   #projects {
     .projects-area {
+     
       grid-template-columns: 1fr;
       grid-gap: 1rem;
       padding: 2rem;
       .card {
-        width: 400px;
-        height: 300px;
+        width: 80vw;
+        height: 50vh;
       }
     }
   }
