@@ -272,8 +272,8 @@ footer {
     .projects-area {
      
       grid-template-columns: 1fr;
-      grid-gap: 1rem;
-      padding: 2rem;
+      grid-gap: .5rem;
+      padding: 1rem;
       .card {
         width: 80vw;
         height: 50vh;
